@@ -9,10 +9,10 @@ class Account(models.Model):
     Accounts = models.Manager()
 
     def __str__(self):
-        return self.first_name, ' ', self.last_name
+        return self.first_name + ' ' + self.last_name
 
 
-TransactionTypes = [('Deposit', 'Deposit'), ('Withdrawl', 'Withdrawl')]
+TransactionTypes = [('Deposit', 'Deposit'), ('Withdrawal', 'Withdrawal')]
 
 
 class Transaction(models.Model):
